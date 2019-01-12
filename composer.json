@@ -20,7 +20,8 @@
         "php": "^7.1.3",
         "illuminate/cache": "~5.7.0",
         "illuminate/contracts": "~5.7.0",
-        "illuminate/database": "~5.7.0"
+        "illuminate/database": "~5.7.0",
+        "jenssegers/mongodb": "^3.0"
     },
     "require-dev": {
         "codedungeon/phpunit-result-printer": "^0.23.0",

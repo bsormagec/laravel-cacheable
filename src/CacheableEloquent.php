@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Sormagec\Cacheable;
 
 use Closure;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 
 trait CacheableEloquent
@@ -238,7 +238,7 @@ trait CacheableEloquent
     /**
      * Generate unique cache key.
      *
-     * @param \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder $builder
+     * @param \Jenssegers\Mongodb\Query\Builder|\Illuminate\Database\Eloquent\Builder $builder
      * @param array                                                                    $columns
      *
      * @return string
@@ -280,7 +280,7 @@ trait CacheableEloquent
     /**
      * Cache given callback.
      *
-     * @param \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder $builder
+     * @param \Jenssegers\Mongodb\Query\Builder|\Illuminate\Database\Eloquent\Builder $builder
      * @param array                                                                    $columns
      * @param \Closure                                                                 $closure
      *
@@ -318,7 +318,7 @@ trait CacheableEloquent
     /**
      * Create a new Eloquent query builder for the model.
      *
-     * @param \Illuminate\Database\Query\Builder $query
+     * @param \Jenssegers\Mongodb\Query\Builder $query
      *
      * @return \Illuminate\Database\Eloquent\Builder|static
      */

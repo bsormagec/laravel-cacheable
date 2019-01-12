@@ -8,7 +8,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Builder;
 
 /**
- * @mixin \Illuminate\Database\Query\Builder
+ * @mixin \Jenssegers\Mongodb\Query\Builder
  */
 class EloquentBuilder extends Builder
 {
