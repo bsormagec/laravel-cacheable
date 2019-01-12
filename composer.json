@@ -1,6 +1,6 @@
 {
-    "name": "rinvex/laravel-cacheable",
-    "description": "Rinvex Cacheable is a granular, intuitive, and fluent caching system for eloquent models. Simple, but yet powerful, plug-n-play with no hassle.",
+    "name": "sormagec/laravel-mongo-cacheable",
+    "description": "Sormagec Mongo Cacheable is a granular, intuitive, and fluent caching system for eloquent mongodb models. Simple, but yet powerful, plug-n-play with no hassle.",
     "type": "library",
     "keywords": [
         "trait",
@@ -10,36 +10,12 @@
         "intuitive",
         "cacheable",
         "granular",
-        "rinvex",
+        "sormagec",
         "fluent",
         "query",
         "cache"
     ],
     "license": "MIT",
-    "homepage": "https://rinvex.com",
-    "support": {
-        "email": "help@rinvex.com",
-        "issues": "https://github.com/rinvex/laravel-cacheable/issues",
-        "source": "https://github.com/rinvex/laravel-cacheable",
-        "docs": "https://github.com/rinvex/laravel-cacheable/blob/master/README.md"
-    },
-    "authors": [
-        {
-            "name": "Rinvex LLC",
-            "homepage": "https://rinvex.com",
-            "email": "help@rinvex.com"
-        },
-        {
-            "name": "Abdelrahman Omran",
-            "homepage": "https://omranic.com",
-            "email": "me@omranic.com",
-            "role": "Project Lead"
-        },
-        {
-            "name": "The Generous Laravel Community",
-            "homepage": "https://github.com/rinvex/laravel-cacheable/contributors"
-        }
-    ],
     "require": {
         "php": "^7.1.3",
         "illuminate/cache": "~5.7.0",
@@ -53,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Rinvex\\Cacheable\\": "src/"
+            "Sormagec\\Cacheable\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rinvex\\Cacheable\\Tests\\": "tests"
+            "Sormagec\\Cacheable\\Tests\\": "tests"
         }
     },
     "scripts": {
