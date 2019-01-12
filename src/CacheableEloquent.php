@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Cacheable;
+namespace Sormagec\Cacheable;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
@@ -67,7 +67,7 @@ trait CacheableEloquent
      */
     protected static function storeCacheKey(string $modelName, string $cacheKey): void
     {
-        $keysFile = storage_path('framework/cache/data/rinvex.cacheable.json');
+        $keysFile = storage_path('framework/cache/data/sormagec.cacheable.json');
         $cacheKeys = static::getCacheKeys($keysFile);
 
         if (! isset($cacheKeys[$modelName]) || ! in_array($cacheKey, $cacheKeys[$modelName])) {
@@ -104,7 +104,7 @@ trait CacheableEloquent
     protected static function flushCacheKeys(string $modelName): array
     {
         $flushedKeys = [];
-        $keysFile = storage_path('framework/cache/data/rinvex.cacheable.json');
+        $keysFile = storage_path('framework/cache/data/sormagec.cacheable.json');
         $cacheKeys = static::getCacheKeys($keysFile);
 
         if (isset($cacheKeys[$modelName])) {

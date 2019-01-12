@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\Cacheable;
+namespace Sormagec\Cacheable;
 
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Builder;
